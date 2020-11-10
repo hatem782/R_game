@@ -1,0 +1,66 @@
+.notes_b {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.containers {
+  width: 270px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.note_b {
+  width: 150px;
+  height: 50px;
+  margin: 0px auto;
+  transform: translateY(550px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.green {
+  background-color: chartreuse;
+}
+
+.orange {
+  background-color: darkorange;
+}
+
+.blue {
+  background-color: dodgerblue;
+}
+
+.purple {
+  background-color: darkviolet;
+}
+
+.note {
+  animation: down 2.5s linear;
+  animation-fill-mode: forwards;
+
+  width: 100px;
+  height: 30px;
+  margin: 0px auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(700px);
+  }
+}
+
+.make_notes {
+  font-size: 10px;
+  position: absolute;
+}
